@@ -1,3 +1,5 @@
+import {map} from 'ramda';
+
 // UpperCase and Reverse bobo's first name
 const bobo = {
   firstName: 'Bobo',
@@ -37,3 +39,14 @@ const upperAndReverseFirstNames = users => users.map(upperAndReverseFirstName)
 
 const result2 = upperAndReverseFirstNames(users)
 console.log({ result2 })
+
+
+// Curring example
+
+const double = numb => numb * 2
+const numbers = [1,2,3,4,5]
+
+const doubleNumbers = map(double)
+
+const result3 = doubleNumbers(numbers)
+console.log({result3})
