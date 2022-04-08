@@ -1,0 +1,23 @@
+{
+  "name": "ramda-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatGuyAnes/Ramda-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatGuyAnes/Ramda-playground/issues"
+  },
+  "homepage": "https://github.com/thatGuyAnes/Ramda-playground#readme",
+  "dependencies": {
+    "ramda": "^0.28.0"
+  }
+}
