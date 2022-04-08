@@ -1,21 +1,39 @@
-// UpperCase and Reverse jhon's first name
-const jhon = {
-  firstName: 'Jhon',
-  lastName: 'Doe'
+// UpperCase and Reverse bobo's first name
+const bobo = {
+  firstName: 'Bobo',
+  lastName: 'Flakes',
 }
 
 const getFirstName = (person) => person.firstName
 const uppercaseString = (str) => str.slice().toUpperCase()
-const reverseString = (str) => [...str]
-  .reverse()
-  .join('')
+const reverseString = (str) => [...str].reverse().join('')
 
 const upperAndReverseFirstName = (person) => {
   const firstName = getFirstName(person)
   const uppercaseFirstName = uppercaseString(firstName)
   return reverseString(uppercaseFirstName)
-} 
+}
 
+const result1 = upperAndReverseFirstName(bobo)
+console.log({ result1 })
 
-const result = upperAndReverseFirstName(jhon)
-console.log({ result })
+// Upper and Reverse for bobo and his friends
+const users = [
+  {
+    firstName: 'Bobo',
+    lastName: 'Flakes',
+  },
+  {
+    firstName: 'Lawrence',
+    lastName: 'Shilling',
+  },
+  {
+    firstName: 'Anon',
+    lastName: 'User',
+  },
+]
+
+const upperAndReverseFirstNames = users => users.map(upperAndReverseFirstName)
+
+const result2 = upperAndReverseFirstNames(users)
+console.log({ result2 })
