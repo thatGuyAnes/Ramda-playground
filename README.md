@@ -1,1 +1,1 @@
-Exercice repo for functional programming patterns using ramda
+Exercises repo for functional programming patterns using ramda
