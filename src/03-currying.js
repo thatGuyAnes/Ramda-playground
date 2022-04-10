@@ -98,4 +98,27 @@ const people = [
 
 // const result1 = keepYoungAdults1(people)
 // const result2 = keepYoungAdults2(people)
-console.log(keepYoungAdults2(people))
+// console.log(keepYoungAdults2(people))
+
+
+// V: -------------------------------------------------------------------------
+//      Create a function 'defaultTo'
+//      curry 'defaultTo' to allow preloading arguments.
+//      defaultTo, takes two arguments: defaultVal and val
+//        returns defaultVal if val is null or undefined else returns val
+// -----------------------------------------------------------------------------
+
+// :Basic js currying
+//
+// const defaultTo = (defaultVal) => (val) => 
+//   !val ?
+//     defaultVal :
+//     val
+
+const defaultTo = R.curry( (defaultVal, val) => val == null ? defaultVal : val )
+
+// Default value of 'Bobo'
+const defaultToBobo = defaultTo('Bobo')
+
+console.log(defaultToBobo(null))      // 'Bobo'
+console.log(defaultToBobo('Patrick')) // 'Patrick'
