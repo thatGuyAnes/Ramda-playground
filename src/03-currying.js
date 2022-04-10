@@ -100,7 +100,6 @@ const people = [
 // const result2 = keepYoungAdults2(people)
 // console.log(keepYoungAdults2(people))
 
-
 // V: -------------------------------------------------------------------------
 //      Create a function 'defaultTo'
 //      curry 'defaultTo' to allow preloading arguments.
